@@ -1,0 +1,366 @@
+.main{
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(#ff000075,#ffa5008a,#ffff0061);
+}
+.bg{
+	background: url(./images/fireworks.gif);
+}
+.main .heading{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.main .player_1 .tittle{
+    width: 180px;
+    text-align: center;
+    background: red;
+    padding: 10px 0;
+    border-radius: 4px;
+}
+.main .player_2 .box2,
+.main .player_3 .box3,
+.main .player_4 .box4,
+.main .box{
+    width: 300px;
+    padding: 10px 20px;
+    margin-bottom: 10px
+}
+.main .player_2 .btn2,
+.main .player_3 .btn3,
+.main .player_4 .btn4 {
+	display: inline-block;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	border-radius: .25rem;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-secondary {
+	color: #fff !important;
+	background-color: #6c757d !important;
+	border-color: #6c757d !important;
+}
+.btn-info {
+	color: #000 !important;
+	background-color: #0dcaf0 !important;
+	border-color: #0dcaf0 !important;
+}
+.btn-warning {
+	color: #000 !important;
+	background-color: #ffc107 !important;
+	border-color: #ffc107 !important;
+}
+.main .span{
+    margin-left: 20px;
+    background-color: red;
+}
+.main .getnumber{
+    background-color: rgb(221, 118, 118);
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+.main .span2{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+.main .span2 ul{
+    padding: 0;
+}
+.main .span2 ul li{
+    list-style: none;
+    padding: 5px 10px;
+}
+.main .noo{
+	width: 240px;
+    background: #a3f48a8f;
+	text-align:center;
+    position: absolute;
+    left: 30px;
+    border-radius: 7px;
+	top: 90px
+}
+.main .noo img{
+	width: 80%;
+}
+.noo_animi{
+	animation: goo 2s forwards;
+}
+@keyframes goo{
+	0%{
+		transform: translateX(0);
+	}100%{
+		transform:translateX(400px)
+	}
+}
+.main .player1_inn{
+    width: 240px;
+    background: #f48a8a8f;
+	text-align:center;
+    position: absolute;
+    left: 30px;
+    border-radius: 7px;
+	top: 90px
+}
+.main .animi1{
+	animation: ani1 2s forwards
+}
+@keyframes ani1{
+	0%{
+		transform:translateY(0)
+	}100%{
+		transform:translateX(400px)
+	}
+}
+.main .animi1_1{
+	animation: ani1_1 2s forwards;
+}
+@keyframes ani1_1{
+	0%{
+		transform:translateX(400px)
+	}100%{
+		transform:translateX(680px)
+	}
+}
+.main .animi1_2{
+	animation: ani1_2 2s forwards;
+}
+@keyframes ani1_2{
+	0%{
+		transform:translateX(680px)
+	}100%{
+		transform:translateX(400px)
+	}
+}
+.main .player1_inn img,
+.main .player2_inn img,
+.main .player3_inn img,
+.main .player4_inn img{
+	width: 80%;
+}
+.main .player2_inn{
+    width: 240px;
+    background: #acf48a8f;
+	text-align:center;
+    position: absolute;
+    border-radius: 7px;
+    height: 250px;
+    left: 30px;
+	top: 140px;
+}
+.main .animi2{
+	animation: ani2 2s forwards
+}
+@keyframes ani2{
+	0%{
+		transform:translateY(0)
+	}100%{
+		transform:translateY(230px)
+	}
+}
+.main .player3_inn{
+    width: 240px;
+    background: #8adff48f;
+	text-align:center;
+    position: absolute;
+    border-radius: 7px;
+    left: 30px;
+    height: 250px;
+	top:140px;
+}
+.main .animi3{
+	animation: ani3 2s forwards
+}
+@keyframes ani3{
+	0%{
+		transform:translateY(0)
+	}100%{
+		transform:translateY(230px);
+		margin-left: 310px;
+	}
+}
+.main .player4_inn{
+    width: 240px;
+    background: #e28af48f;
+	text-align:center;
+    position: absolute;
+    top: 140px;
+    border-radius: 7px;
+    left: 30px;
+    height: 250px;
+    overflow: hidden;
+}
+.main .animi4{
+	animation: ani4 2s forwards
+}
+@keyframes ani4{
+	0%{
+		transform:translateY(0)
+	}100%{
+		transform:translateY(230px);
+		margin-left: 620px;
+	}
+}
+.main .player1_inn span,
+.main .player2_inn span,
+.main .player3_inn span,
+.main .player4_inn span{
+	height: 20px;
+}
+/* cancle button */
+.cancle2,
+.cancle{
+	position: relative;
+	background: #d74343;
+	width: 70px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	height: 30px;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.cancle2 span,
+.cancle span{
+	font-weight: bold;
+	color: #fff
+}
+.cancle2 .right2,
+.cancle2 .left2,
+.cancle .right,
+.cancle .left{
+	background-color: transparent;
+	border: none;
+	position: absolute;
+}
+.erase{
+	position: absolute;
+	top: 23%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin-left: 60px;
+	animation: eraase 4s infinite;
+}
+@keyframes eraase{
+	0%{
+		transform: translateX(0px);
+		color: rgb(214, 80, 3)
+	}100%{
+		transform: translateX(-120px);
+		color: rgb(255, 255, 255)
+	}
+}
+.cancle2 .left12,
+.cancle2 .right12,
+.cancle .left1,
+.cancle .right1{
+	font-size: 16px;
+	transform: rotateX(180deg);
+	font-weight: 800;
+}
+@keyframes GoLeft{
+	0%{
+		transform: rotateX(0)
+	}100%{
+		transform: rotateX(90deg);
+		padding-right: 30px;
+	}
+}
+@keyframes GoLeft1{
+	0%{
+		transform: rotateX(0)
+	}100%{
+		transform: rotateX(90deg);
+		padding-right: 30px;
+		margin-top: 3px
+		
+	}
+}
+@keyframes GoLeft3{
+	0%{
+		transform: rotateX(0)
+	}100%{
+		transform: rotateX(90deg);
+		padding-right: 30px;
+	}
+}
+@keyframes GoLeft4{
+	0%{
+		transform: rotateX(0)
+	}100%{
+		transform: rotateX(90deg);
+		padding-right: 30px;
+		margin-top: 3px
+		
+	}
+}
+.cancle2 .left12,
+.cancle .left1{
+		transform: rotateX(0deg);
+}
+.cancle .go1{
+		transform: rotateX(0deg);
+	  animation: GoLeft 1s forwards;
+}
+.cancle .go2{
+	  animation: GoLeft1 1s forwards;
+	
+}
+.cancle2 .go3{
+	transform: rotateX(0deg);
+	animation: GoLeft3 1s forwards;
+}
+.cancle2 .go4{
+	  animation: GoLeft4 1s forwards;
+}
+.cancleWithbtn1,
+.cancleWithbtn{
+	display: flex;
+	align-items: center;
+}
+.btnleft1,
+.btnleft2{
+	animation: btnGoLeft 5s forwards;
+}
+@keyframes btnGoLeft{
+	0%{
+
+	}100%{
+		transform: translateX(-100px);
+	}
+}
+.cancleWithbtn .text,
+.cancleWithbtn1 .text1{
+	background: rgb(146, 68, 68);
+	color: white;
+}
+.main .getResult{
+	width: 200px;
+	background: rgb(78, 253, 116);
+	padding: 20px;
+	border-radius: 7px;
+	position: absolute;
+}
+.main .getResult .player1,
+.main .getResult .player2,
+.main .getResult .player3,
+.main .getResult .player4{
+	display: inline-block;
+	padding: 5px;
+}

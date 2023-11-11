@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <h2 class="heading">Let's Play Guessing Game...</h2>
+        <div class="player_1">
+            <h1 class="tittle">Player-1</h1>
+            <input type="text" class="box" placeholder="Give A Number">
+            <button class="btn btn-success">Get Number</button>
+
+
+            <div class="cancleWithbtn d-none">
+                <span class="text d-none">Give Me Some Number...</span>
+                <div class="cancle btn5">
+                    <span>Erase</span>
+                    <i class="fa-solid fa-delete-left erase"></i>
+                    <button class="left"> <i class="fa-solid fa-slash left1 "></i></button>
+                    <button class="right"> <i class="fa-solid fa-slash right1"></i></button>
+                </div>
+            </div>
+            <div class="cancleWithbtn1 d-none">
+                <span class="text1 d-none">Give Me Some Vaild Number...</span>
+                <div class="cancle2 btn6">
+                    <span>Erase</span>
+                    <i class="fa-solid fa-delete-left erase"></i>
+                    <button class="left2"> <i class="fa-solid fa-slash left12 "></i></button>
+                    <button class="right2"> <i class="fa-solid fa-slash right12"></i></button>
+                </div>
+            </div>
+
+            <span class="span"></span>
+            <span class="span2"></span>
+            <div class="getResult d-none">
+                <h3>Result Board</h3>
+                <span>Player-1: <span class="player1"></span></span>
+                <span>Player-2: <span class="player2"></span></span>
+                <span>Player-3: <span class="player3"></span></span>
+                <span>Player-4: <span class="player4"></span></span>
+            </div>
+        </div>
+        <div class="noo d-none">
+            <img src="./images/no.gif" alt="">
+        </div>
+        <div class="player1_inn d-none">
+            <h1>Player-1</h1>
+            <span>Result: <span class="result1"> ?...</span></span>
+            <img src="./images/Player_1_win.gif" class="win1" alt="">
+            <img src="./images/Player_1_lose.gif" class="lose1 d-none" alt="">
+        </div>
+        <div class="player_2">
+            <input type="text" class="box2 d-none" placeholder="Give Me Your Guess Number">
+            <button class="btn2 btn-secondary d-none">Get Number</button>
+            <h3 class="d-none chance2">Chance Remaining: <span class="sp2"></span></h3>
+        </div>
+        <div class="player2_inn d-none">
+            <h1>Player-2</h1>
+            <span>Result: <span class="result2"> ?...</span></span>
+            <img src="./images/Player_2_win.gif" class="win2" alt="">
+            <img src="./images/Player_2_lose.gif" class="lose2 d-none" alt="">
+        </div>
+        <div class="player_3">
+            <input type="text" class="box3 d-none" placeholder="Give Me Your Guess Number">
+            <button class="btn3 btn-info d-none">Get Number</button>
+            <h3 class="d-none chance3">Chance Remaining: <span class="sp3"></span></h3>
+        </div>
+        <div class="player3_inn d-none">
+            <h1>Player-3</h1>
+            <span>Result: <span class="result3"> ?...</span></span>
+            <img src="./images/Player_3_win.gif" class="win3" alt="">
+            <img src="./images/Player_3_lose.gif" class="lose3 d-none" alt="">
+        </div>
+        <div class="player_4">
+            <input type="text" class="box4 d-none" placeholder="Give Me Your Guess Number">
+            <button class="btn4 btn-warning d-none">Get Number</button>
+            <h3 class="d-none chance4">Chance Remaining: <span class="sp4"></span></h3>
+        </div>
+        <div class="player4_inn d-none">
+            <h1>Player-4</h1>
+            <span>Result: <span class="result4"> ?...</span></span>
+            <img src="./images/Player_4_win.gif" class="win4" alt="">
+            <img src="./images/Player_4_lose.gif" class="lose4 d-none" alt="">
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
